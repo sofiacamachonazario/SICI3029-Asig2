@@ -117,4 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Body Blitz Business cares about making the experience as comfortable as posible! with accesible user friendly machines, 24/7 shower services and disability friendly parking. We make sure you feel WELCOME and SAFE at all hours.
+</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Body Blitz Business cares about making the experience as comfortable as posible! with accesible user friendly machines, 24/7 shower services and disability friendly parking. We make sure you feel WELCOME and SAFE at all hours.
+</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Body Blitz Business cares about making the experience as comfortable as posible! with accesible user friendly machines, 24/7 shower services and disability friendly parking. We make sure you feel WELCOME and SAFE at all hours.
+</value>
+  </data>
 </root>
