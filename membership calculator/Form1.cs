@@ -17,9 +17,89 @@ namespace membership_calculator
             InitializeComponent();
         }
 
+        private void membershipGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }      
+        
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void childButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studentButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void seniorButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void option_GroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void yoga_CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void karate_CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void personal_Trainer_CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void membership_Length_GroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void enter_Name_TextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Fees_GroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monthly_Fee_Label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void total_Label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calculate_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clear_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exit_Button_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
