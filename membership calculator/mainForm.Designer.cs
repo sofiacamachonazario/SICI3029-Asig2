@@ -48,7 +48,7 @@
             this.membershipButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.membershipButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.membershipButton.ForeColor = System.Drawing.Color.White;
-            this.membershipButton.Location = new System.Drawing.Point(893, 439);
+            this.membershipButton.Location = new System.Drawing.Point(623, 468);
             this.membershipButton.Name = "membershipButton";
             this.membershipButton.Size = new System.Drawing.Size(114, 48);
             this.membershipButton.TabIndex = 0;
@@ -77,7 +77,7 @@
             this.facilitiesButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.facilitiesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.facilitiesButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.facilitiesButton.Location = new System.Drawing.Point(893, 302);
+            this.facilitiesButton.Location = new System.Drawing.Point(623, 302);
             this.facilitiesButton.Name = "facilitiesButton";
             this.facilitiesButton.Size = new System.Drawing.Size(114, 45);
             this.facilitiesButton.TabIndex = 2;

@@ -24,7 +24,7 @@ namespace membership_calculator
 
         private void staffButton_Click(object sender, EventArgs e)
         {
-            Application.Run(new staffForm());   
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace membership_calculator
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
