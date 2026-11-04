@@ -19,12 +19,14 @@ namespace membership_calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            membershipForm membership = new membershipForm();
+            membership.ShowDialog();
         }
 
         private void staffButton_Click(object sender, EventArgs e)
         {
-            
+            staffForm staff = new staffForm();
+            staff.ShowDialog();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -39,7 +41,8 @@ namespace membership_calculator
 
         private void facilitiesButton_Click(object sender, EventArgs e)
         {
-
+            facilitiesForm facilities = new facilitiesForm();
+            facilities.ShowDialog();
         }
 
         private void mainForm_Load(object sender, EventArgs e)
