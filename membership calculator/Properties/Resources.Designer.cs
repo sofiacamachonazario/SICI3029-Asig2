@@ -63,6 +63,26 @@ namespace membership_calculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pexels_julia_larson_6455771 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-julia-larson-6455771", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_mralpha_13451904 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-mralpha-13451904", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_olly_3768697 {
             get {
                 object obj = ResourceManager.GetObject("pexels-olly-3768697", resourceCulture);

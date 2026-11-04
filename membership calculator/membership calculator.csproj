@@ -46,34 +46,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="facilitiesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="facilitiesForm.Designer.cs">
+      <DependentUpon>facilitiesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="membershipForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="membershipForm.Designer.cs">
+      <DependentUpon>membershipForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffForm.Designer.cs">
+      <DependentUpon>staffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trainerForm.Designer.cs">
+      <DependentUpon>trainerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="instructorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="instructorForm.Designer.cs">
+      <DependentUpon>instructorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personalTrainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personalTrainerForm.Designer.cs">
+      <DependentUpon>personalTrainerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="membershipForm.resx">
+      <DependentUpon>membershipForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="staffForm.resx">
+      <DependentUpon>staffForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +109,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="trainerForm.resx">
+      <DependentUpon>trainerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,6 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pexels-olly-901439.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-mralpha-13451904.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-julia-larson-6455771.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

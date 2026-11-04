@@ -1,6 +1,6 @@
 ﻿namespace membership_calculator
 {
-    partial class Form1
+    partial class membershipForm
     {
         /// <summary>
         /// Required designer variable.
