@@ -101,5 +101,10 @@ namespace membership_calculator
         {
             this.Close();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+         
+        }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace membership_calculator
 {
-    public partial class Form3 : Form
+    public partial class staffForm : Form
     {
-        public Form3()
+        public staffForm()
         {
             InitializeComponent();
         }
@@ -25,6 +25,16 @@ namespace membership_calculator
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.yoga_CheckBox = new System.Windows.Forms.CheckBox();
+            this.trainerCheckbox = new System.Windows.Forms.CheckBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.standardAdultButton = new System.Windows.Forms.RadioButton();
             this.childButton = new System.Windows.Forms.RadioButton();
@@ -37,11 +37,14 @@
             this.seniorButton = new System.Windows.Forms.RadioButton();
             this.membershipGroupBox = new System.Windows.Forms.GroupBox();
             this.option_GroupBox = new System.Windows.Forms.GroupBox();
-            this.personal_Trainer_CheckBox = new System.Windows.Forms.CheckBox();
-            this.karate_CheckBox = new System.Windows.Forms.CheckBox();
+            this.personalTrainerCheckbox = new System.Windows.Forms.CheckBox();
+            this.instructorCheckbox = new System.Windows.Forms.CheckBox();
             this.membership_Length_GroupBox = new System.Windows.Forms.GroupBox();
-            this.enter_Name_TextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lengthTextbox = new System.Windows.Forms.TextBox();
             this.Fees_GroupBox = new System.Windows.Forms.GroupBox();
+            this.totalTextbox = new System.Windows.Forms.TextBox();
+            this.monthlyFeeTextbox = new System.Windows.Forms.TextBox();
             this.total_Label = new System.Windows.Forms.Label();
             this.monthly_Fee_Label = new System.Windows.Forms.Label();
             this.calculate_button = new System.Windows.Forms.Button();
@@ -53,15 +56,15 @@
             this.Fees_GroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // yoga_CheckBox
+            // trainerCheckbox
             // 
-            this.yoga_CheckBox.Location = new System.Drawing.Point(15, 19);
-            this.yoga_CheckBox.Name = "yoga_CheckBox";
-            this.yoga_CheckBox.Size = new System.Drawing.Size(132, 41);
-            this.yoga_CheckBox.TabIndex = 1;
-            this.yoga_CheckBox.Text = "Yoga";
-            this.yoga_CheckBox.UseVisualStyleBackColor = true;
-            this.yoga_CheckBox.CheckedChanged += new System.EventHandler(this.yoga_CheckBox_CheckedChanged);
+            this.trainerCheckbox.Location = new System.Drawing.Point(15, 19);
+            this.trainerCheckbox.Name = "trainerCheckbox";
+            this.trainerCheckbox.Size = new System.Drawing.Size(132, 41);
+            this.trainerCheckbox.TabIndex = 1;
+            this.trainerCheckbox.Text = "Trainers";
+            this.trainerCheckbox.UseVisualStyleBackColor = true;
+            this.trainerCheckbox.CheckedChanged += new System.EventHandler(this.yoga_CheckBox_CheckedChanged);
             // 
             // contextMenuStrip1
             // 
@@ -114,13 +117,17 @@
             // 
             // membershipGroupBox
             // 
+            this.membershipGroupBox.BackColor = System.Drawing.Color.Transparent;
             this.membershipGroupBox.Controls.Add(this.seniorButton);
             this.membershipGroupBox.Controls.Add(this.studentButton);
             this.membershipGroupBox.Controls.Add(this.childButton);
             this.membershipGroupBox.Controls.Add(this.standardAdultButton);
-            this.membershipGroupBox.Location = new System.Drawing.Point(52, 57);
+            this.membershipGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.membershipGroupBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.membershipGroupBox.Location = new System.Drawing.Point(52, 76);
             this.membershipGroupBox.Name = "membershipGroupBox";
-            this.membershipGroupBox.Size = new System.Drawing.Size(199, 154);
+            this.membershipGroupBox.Size = new System.Drawing.Size(224, 154);
             this.membershipGroupBox.TabIndex = 2;
             this.membershipGroupBox.TabStop = false;
             this.membershipGroupBox.Text = "Membership";
@@ -128,10 +135,14 @@
             // 
             // option_GroupBox
             // 
-            this.option_GroupBox.Controls.Add(this.personal_Trainer_CheckBox);
-            this.option_GroupBox.Controls.Add(this.karate_CheckBox);
-            this.option_GroupBox.Controls.Add(this.yoga_CheckBox);
-            this.option_GroupBox.Location = new System.Drawing.Point(348, 57);
+            this.option_GroupBox.BackColor = System.Drawing.Color.Transparent;
+            this.option_GroupBox.Controls.Add(this.personalTrainerCheckbox);
+            this.option_GroupBox.Controls.Add(this.instructorCheckbox);
+            this.option_GroupBox.Controls.Add(this.trainerCheckbox);
+            this.option_GroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.option_GroupBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.option_GroupBox.Location = new System.Drawing.Point(578, 76);
             this.option_GroupBox.Name = "option_GroupBox";
             this.option_GroupBox.Size = new System.Drawing.Size(214, 163);
             this.option_GroupBox.TabIndex = 4;
@@ -139,63 +150,97 @@
             this.option_GroupBox.Text = "Options";
             this.option_GroupBox.Enter += new System.EventHandler(this.option_GroupBox_Enter);
             // 
-            // personal_Trainer_CheckBox
+            // personalTrainerCheckbox
             // 
-            this.personal_Trainer_CheckBox.Location = new System.Drawing.Point(15, 89);
-            this.personal_Trainer_CheckBox.Name = "personal_Trainer_CheckBox";
-            this.personal_Trainer_CheckBox.Size = new System.Drawing.Size(132, 41);
-            this.personal_Trainer_CheckBox.TabIndex = 3;
-            this.personal_Trainer_CheckBox.Text = "Personal Trainer";
-            this.personal_Trainer_CheckBox.UseVisualStyleBackColor = true;
-            this.personal_Trainer_CheckBox.CheckedChanged += new System.EventHandler(this.personal_Trainer_CheckBox_CheckedChanged);
+            this.personalTrainerCheckbox.Location = new System.Drawing.Point(15, 89);
+            this.personalTrainerCheckbox.Name = "personalTrainerCheckbox";
+            this.personalTrainerCheckbox.Size = new System.Drawing.Size(132, 41);
+            this.personalTrainerCheckbox.TabIndex = 3;
+            this.personalTrainerCheckbox.Text = "Personal Trainer";
+            this.personalTrainerCheckbox.UseVisualStyleBackColor = true;
+            this.personalTrainerCheckbox.CheckedChanged += new System.EventHandler(this.personal_Trainer_CheckBox_CheckedChanged);
             // 
-            // karate_CheckBox
+            // instructorCheckbox
             // 
-            this.karate_CheckBox.Location = new System.Drawing.Point(15, 54);
-            this.karate_CheckBox.Name = "karate_CheckBox";
-            this.karate_CheckBox.Size = new System.Drawing.Size(132, 41);
-            this.karate_CheckBox.TabIndex = 2;
-            this.karate_CheckBox.Text = "Karate";
-            this.karate_CheckBox.UseVisualStyleBackColor = true;
-            this.karate_CheckBox.CheckedChanged += new System.EventHandler(this.karate_CheckBox_CheckedChanged);
+            this.instructorCheckbox.Location = new System.Drawing.Point(15, 54);
+            this.instructorCheckbox.Name = "instructorCheckbox";
+            this.instructorCheckbox.Size = new System.Drawing.Size(132, 41);
+            this.instructorCheckbox.TabIndex = 2;
+            this.instructorCheckbox.Text = "Instructors";
+            this.instructorCheckbox.UseVisualStyleBackColor = true;
+            this.instructorCheckbox.CheckedChanged += new System.EventHandler(this.karate_CheckBox_CheckedChanged);
             // 
             // membership_Length_GroupBox
             // 
-            this.membership_Length_GroupBox.Controls.Add(this.enter_Name_TextBox);
-            this.membership_Length_GroupBox.Location = new System.Drawing.Point(51, 245);
+            this.membership_Length_GroupBox.BackColor = System.Drawing.Color.Transparent;
+            this.membership_Length_GroupBox.Controls.Add(this.label1);
+            this.membership_Length_GroupBox.Controls.Add(this.lengthTextbox);
+            this.membership_Length_GroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.membership_Length_GroupBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.membership_Length_GroupBox.Location = new System.Drawing.Point(51, 302);
             this.membership_Length_GroupBox.Name = "membership_Length_GroupBox";
-            this.membership_Length_GroupBox.Size = new System.Drawing.Size(200, 152);
+            this.membership_Length_GroupBox.Size = new System.Drawing.Size(255, 152);
             this.membership_Length_GroupBox.TabIndex = 5;
             this.membership_Length_GroupBox.TabStop = false;
             this.membership_Length_GroupBox.Text = "Membership Length";
             this.membership_Length_GroupBox.Enter += new System.EventHandler(this.membership_Length_GroupBox_Enter);
             // 
-            // enter_Name_TextBox
+            // label1
             // 
-            this.enter_Name_TextBox.Location = new System.Drawing.Point(41, 111);
-            this.enter_Name_TextBox.Name = "enter_Name_TextBox";
-            this.enter_Name_TextBox.Size = new System.Drawing.Size(100, 20);
-            this.enter_Name_TextBox.TabIndex = 0;
-            this.enter_Name_TextBox.TextChanged += new System.EventHandler(this.enter_Name_TextBox_TextChanged);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(38, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(193, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "enter membership length";
+            // 
+            // lengthTextbox
+            // 
+            this.lengthTextbox.Location = new System.Drawing.Point(41, 111);
+            this.lengthTextbox.Name = "lengthTextbox";
+            this.lengthTextbox.Size = new System.Drawing.Size(100, 24);
+            this.lengthTextbox.TabIndex = 0;
+            this.lengthTextbox.TextChanged += new System.EventHandler(this.enter_Name_TextBox_TextChanged);
             // 
             // Fees_GroupBox
             // 
+            this.Fees_GroupBox.BackColor = System.Drawing.Color.Transparent;
+            this.Fees_GroupBox.Controls.Add(this.totalTextbox);
+            this.Fees_GroupBox.Controls.Add(this.monthlyFeeTextbox);
             this.Fees_GroupBox.Controls.Add(this.total_Label);
             this.Fees_GroupBox.Controls.Add(this.monthly_Fee_Label);
-            this.Fees_GroupBox.Location = new System.Drawing.Point(362, 245);
+            this.Fees_GroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fees_GroupBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Fees_GroupBox.Location = new System.Drawing.Point(556, 302);
             this.Fees_GroupBox.Name = "Fees_GroupBox";
-            this.Fees_GroupBox.Size = new System.Drawing.Size(200, 152);
+            this.Fees_GroupBox.Size = new System.Drawing.Size(237, 164);
             this.Fees_GroupBox.TabIndex = 6;
             this.Fees_GroupBox.TabStop = false;
             this.Fees_GroupBox.Text = "Fees";
             this.Fees_GroupBox.Enter += new System.EventHandler(this.Fees_GroupBox_Enter);
             // 
+            // totalTextbox
+            // 
+            this.totalTextbox.Location = new System.Drawing.Point(119, 82);
+            this.totalTextbox.Name = "totalTextbox";
+            this.totalTextbox.Size = new System.Drawing.Size(75, 22);
+            this.totalTextbox.TabIndex = 3;
+            // 
+            // monthlyFeeTextbox
+            // 
+            this.monthlyFeeTextbox.Location = new System.Drawing.Point(119, 52);
+            this.monthlyFeeTextbox.Name = "monthlyFeeTextbox";
+            this.monthlyFeeTextbox.Size = new System.Drawing.Size(75, 22);
+            this.monthlyFeeTextbox.TabIndex = 2;
+            // 
             // total_Label
             // 
             this.total_Label.AutoSize = true;
-            this.total_Label.Location = new System.Drawing.Point(130, 76);
+            this.total_Label.Location = new System.Drawing.Point(20, 79);
             this.total_Label.Name = "total_Label";
-            this.total_Label.Size = new System.Drawing.Size(31, 13);
+            this.total_Label.Size = new System.Drawing.Size(43, 16);
             this.total_Label.TabIndex = 1;
             this.total_Label.Text = "Total";
             this.total_Label.Click += new System.EventHandler(this.total_Label_Click);
@@ -203,48 +248,65 @@
             // monthly_Fee_Label
             // 
             this.monthly_Fee_Label.AutoSize = true;
-            this.monthly_Fee_Label.Location = new System.Drawing.Point(130, 48);
+            this.monthly_Fee_Label.Location = new System.Drawing.Point(20, 52);
             this.monthly_Fee_Label.Name = "monthly_Fee_Label";
-            this.monthly_Fee_Label.Size = new System.Drawing.Size(68, 13);
+            this.monthly_Fee_Label.Size = new System.Drawing.Size(95, 16);
             this.monthly_Fee_Label.TabIndex = 0;
             this.monthly_Fee_Label.Text = "Monthly Fee:";
             this.monthly_Fee_Label.Click += new System.EventHandler(this.monthly_Fee_Label_Click);
             // 
             // calculate_button
             // 
+            this.calculate_button.BackColor = System.Drawing.Color.Transparent;
+            this.calculate_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.calculate_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculate_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.calculate_button.Location = new System.Drawing.Point(92, 477);
             this.calculate_button.Name = "calculate_button";
-            this.calculate_button.Size = new System.Drawing.Size(75, 23);
+            this.calculate_button.Size = new System.Drawing.Size(120, 27);
             this.calculate_button.TabIndex = 2;
             this.calculate_button.Text = "Calculate";
-            this.calculate_button.UseVisualStyleBackColor = true;
+            this.calculate_button.UseVisualStyleBackColor = false;
             this.calculate_button.Click += new System.EventHandler(this.calculate_button_Click);
             // 
             // clear_Button
             // 
-            this.clear_Button.Location = new System.Drawing.Point(234, 477);
+            this.clear_Button.BackColor = System.Drawing.Color.Transparent;
+            this.clear_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.clear_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.clear_Button.Location = new System.Drawing.Point(399, 475);
             this.clear_Button.Name = "clear_Button";
-            this.clear_Button.Size = new System.Drawing.Size(75, 23);
+            this.clear_Button.Size = new System.Drawing.Size(75, 31);
             this.clear_Button.TabIndex = 7;
             this.clear_Button.Text = "Clear";
-            this.clear_Button.UseVisualStyleBackColor = true;
+            this.clear_Button.UseVisualStyleBackColor = false;
             this.clear_Button.Click += new System.EventHandler(this.clear_Button_Click);
             // 
             // exit_Button
             // 
-            this.exit_Button.Location = new System.Drawing.Point(408, 477);
+            this.exit_Button.BackColor = System.Drawing.Color.Transparent;
+            this.exit_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exit_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exit_Button.Location = new System.Drawing.Point(631, 477);
             this.exit_Button.Name = "exit_Button";
-            this.exit_Button.Size = new System.Drawing.Size(75, 23);
+            this.exit_Button.Size = new System.Drawing.Size(75, 27);
             this.exit_Button.TabIndex = 8;
             this.exit_Button.Text = "Exit";
-            this.exit_Button.UseVisualStyleBackColor = true;
+            this.exit_Button.UseVisualStyleBackColor = false;
             this.exit_Button.Click += new System.EventHandler(this.exit_Button_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 573);
+            this.BackgroundImage = global::membership_calculator.Properties.Resources.pexels_olly_901439;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(816, 570);
             this.Controls.Add(this.exit_Button);
             this.Controls.Add(this.clear_Button);
             this.Controls.Add(this.calculate_button);
@@ -252,8 +314,10 @@
             this.Controls.Add(this.membership_Length_GroupBox);
             this.Controls.Add(this.option_GroupBox);
             this.Controls.Add(this.membershipGroupBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Body Blitz Fitness";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.membershipGroupBox.ResumeLayout(false);
             this.option_GroupBox.ResumeLayout(false);
             this.membership_Length_GroupBox.ResumeLayout(false);
@@ -265,7 +329,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.CheckBox yoga_CheckBox;
+        private System.Windows.Forms.CheckBox trainerCheckbox;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.RadioButton standardAdultButton;
         private System.Windows.Forms.RadioButton childButton;
@@ -273,16 +337,19 @@
         private System.Windows.Forms.RadioButton seniorButton;
         private System.Windows.Forms.GroupBox membershipGroupBox;
         private System.Windows.Forms.GroupBox option_GroupBox;
-        private System.Windows.Forms.CheckBox personal_Trainer_CheckBox;
-        private System.Windows.Forms.CheckBox karate_CheckBox;
+        private System.Windows.Forms.CheckBox personalTrainerCheckbox;
+        private System.Windows.Forms.CheckBox instructorCheckbox;
         private System.Windows.Forms.GroupBox membership_Length_GroupBox;
-        private System.Windows.Forms.TextBox enter_Name_TextBox;
+        private System.Windows.Forms.TextBox lengthTextbox;
         private System.Windows.Forms.GroupBox Fees_GroupBox;
         private System.Windows.Forms.Label total_Label;
         private System.Windows.Forms.Label monthly_Fee_Label;
         private System.Windows.Forms.Button calculate_button;
         private System.Windows.Forms.Button clear_Button;
         private System.Windows.Forms.Button exit_Button;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox totalTextbox;
+        private System.Windows.Forms.TextBox monthlyFeeTextbox;
     }
 }
 
