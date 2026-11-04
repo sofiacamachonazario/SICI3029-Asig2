@@ -43,8 +43,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lengthTextbox = new System.Windows.Forms.TextBox();
             this.Fees_GroupBox = new System.Windows.Forms.GroupBox();
-            this.totalTextbox = new System.Windows.Forms.TextBox();
-            this.monthlyFeeTextbox = new System.Windows.Forms.TextBox();
+            this.monthlyfee_label = new System.Windows.Forms.Label();
+            this.total = new System.Windows.Forms.Label();
             this.total_Label = new System.Windows.Forms.Label();
             this.monthly_Fee_Label = new System.Windows.Forms.Label();
             this.calculate_button = new System.Windows.Forms.Button();
@@ -191,9 +191,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(38, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 18);
+            this.label1.Size = new System.Drawing.Size(195, 18);
             this.label1.TabIndex = 1;
-            this.label1.Text = "enter membership length";
+            this.label1.Text = "Enter membership length";
             // 
             // lengthTextbox
             // 
@@ -206,8 +206,8 @@
             // Fees_GroupBox
             // 
             this.Fees_GroupBox.BackColor = System.Drawing.Color.Transparent;
-            this.Fees_GroupBox.Controls.Add(this.totalTextbox);
-            this.Fees_GroupBox.Controls.Add(this.monthlyFeeTextbox);
+            this.Fees_GroupBox.Controls.Add(this.monthlyfee_label);
+            this.Fees_GroupBox.Controls.Add(this.total);
             this.Fees_GroupBox.Controls.Add(this.total_Label);
             this.Fees_GroupBox.Controls.Add(this.monthly_Fee_Label);
             this.Fees_GroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
@@ -221,19 +221,24 @@
             this.Fees_GroupBox.Text = "Fees";
             this.Fees_GroupBox.Enter += new System.EventHandler(this.Fees_GroupBox_Enter);
             // 
-            // totalTextbox
+            // monthlyfee_label
             // 
-            this.totalTextbox.Location = new System.Drawing.Point(119, 82);
-            this.totalTextbox.Name = "totalTextbox";
-            this.totalTextbox.Size = new System.Drawing.Size(75, 22);
-            this.totalTextbox.TabIndex = 3;
+            this.monthlyfee_label.BackColor = System.Drawing.Color.White;
+            this.monthlyfee_label.Location = new System.Drawing.Point(156, 52);
+            this.monthlyfee_label.Name = "monthlyfee_label";
+            this.monthlyfee_label.Size = new System.Drawing.Size(50, 16);
+            this.monthlyfee_label.TabIndex = 3;
+            this.monthlyfee_label.Text = "\r\n\r\n";
+            this.monthlyfee_label.Click += new System.EventHandler(this.monthlyfee_label_Click);
             // 
-            // monthlyFeeTextbox
+            // total
             // 
-            this.monthlyFeeTextbox.Location = new System.Drawing.Point(119, 52);
-            this.monthlyFeeTextbox.Name = "monthlyFeeTextbox";
-            this.monthlyFeeTextbox.Size = new System.Drawing.Size(75, 22);
-            this.monthlyFeeTextbox.TabIndex = 2;
+            this.total.BackColor = System.Drawing.Color.White;
+            this.total.Location = new System.Drawing.Point(156, 79);
+            this.total.Name = "total";
+            this.total.Size = new System.Drawing.Size(50, 16);
+            this.total.TabIndex = 2;
+            this.total.Click += new System.EventHandler(this.label2_Click);
             // 
             // total_Label
             // 
@@ -348,8 +353,8 @@
         private System.Windows.Forms.Button clear_Button;
         private System.Windows.Forms.Button exit_Button;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox totalTextbox;
-        private System.Windows.Forms.TextBox monthlyFeeTextbox;
+        private System.Windows.Forms.Label monthlyfee_label;
+        private System.Windows.Forms.Label total;
     }
 }
 

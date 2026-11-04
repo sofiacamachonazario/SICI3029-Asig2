@@ -94,6 +94,27 @@ namespace membership_calculator
 
         private void clear_Button_Click(object sender, EventArgs e)
         {
+            //Limpiar TextBox
+            lengthTextbox.Text = String.Empty;
+
+            //limpiar Labels
+            monthlyfee_label.Text = " ";
+            total.Text = " ";
+
+            //Clear RadioButtons
+            standardAdultButton.Checked = false;
+            childButton.Checked = false;
+            studentButton.Checked = false;
+            seniorButton.Checked = false;
+
+            //Clear CheckBoxes
+            trainerCheckbox.Checked = false;
+            instructorCheckbox.Checked = false;
+            personalTrainerCheckbox.Checked = false;
+
+
+
+
 
         }
 
@@ -105,6 +126,16 @@ namespace membership_calculator
         private void Form1_Load(object sender, EventArgs e)
         {
          
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monthlyfee_label_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
