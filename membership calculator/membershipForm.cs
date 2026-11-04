@@ -89,8 +89,46 @@ namespace membership_calculator
 
         private void calculate_button_Click(object sender, EventArgs e)
         {
+            try
+            {
+                //Variables de membresia
+                decimal adultFee = 40.00m;
+                decimal childFee = 20.00m;
+                decimal studentFee = 30.00m;
+                decimal seniorFee = 25.00m;
 
-        }
+                //Variables para las opciones (Decimal)
+                decimal trainerFee = 10.00m;
+                decimal instructorFee = 20.00m;
+                decimal personalTrainerFee = 30.00m;
+                //variables para las opciones (INTEGER)
+                int Min_Months = 1, Max_Months = 24;
+
+                int months;
+                decimal monthlyFee = 0.00m, totalFee;
+
+
+                //Validacion en orden (Se detendrá en el primer error encontrado)
+                if (nameTextBox.Text.Trim() == " ")
+                {
+                    MessageBox.Show("Please enter your name.", "Input Error");
+                    nameTextBox.Focus();
+                    return;
+                }
+                if (lastnametextbox.Text.Trim() == " ")
+                {
+                    MessageBox.Show("Please enter your last name.", "Input Error");
+                    lastnametextbox.Focus();
+                    return;
+                }
+
+
+
+
+
+
+
+            }
 
         private void clear_Button_Click(object sender, EventArgs e)
         {

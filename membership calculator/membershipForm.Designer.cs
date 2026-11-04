@@ -50,6 +50,10 @@
             this.calculate_button = new System.Windows.Forms.Button();
             this.clear_Button = new System.Windows.Forms.Button();
             this.exit_Button = new System.Windows.Forms.Button();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.lastnametextbox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.membershipGroupBox.SuspendLayout();
             this.option_GroupBox.SuspendLayout();
             this.membership_Length_GroupBox.SuspendLayout();
@@ -305,13 +309,57 @@
             this.exit_Button.UseVisualStyleBackColor = false;
             this.exit_Button.Click += new System.EventHandler(this.exit_Button_Click);
             // 
-            // Form1
+            // nameTextBox
+            // 
+            this.nameTextBox.Location = new System.Drawing.Point(478, 28);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nameTextBox.TabIndex = 9;
+            // 
+            // lastnametextbox
+            // 
+            this.lastnametextbox.Location = new System.Drawing.Point(606, 28);
+            this.lastnametextbox.Name = "lastnametextbox";
+            this.lastnametextbox.Size = new System.Drawing.Size(100, 20);
+            this.lastnametextbox.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(496, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 18);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Name:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(612, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 18);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Last Name";
+            // 
+            // membershipForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::membership_calculator.Properties.Resources.pexels_olly_901439;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(816, 570);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lastnametextbox);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.exit_Button);
             this.Controls.Add(this.clear_Button);
             this.Controls.Add(this.calculate_button);
@@ -320,7 +368,7 @@
             this.Controls.Add(this.option_GroupBox);
             this.Controls.Add(this.membershipGroupBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "membershipForm";
             this.Text = "Body Blitz Fitness";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.membershipGroupBox.ResumeLayout(false);
@@ -330,6 +378,7 @@
             this.Fees_GroupBox.ResumeLayout(false);
             this.Fees_GroupBox.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -355,6 +404,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label monthlyfee_label;
         private System.Windows.Forms.Label total;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.TextBox lastnametextbox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
