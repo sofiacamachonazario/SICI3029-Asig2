@@ -44,5 +44,10 @@ namespace membership_calculator
             instructorForm instructor = new instructorForm();
             instructor.ShowDialog(); 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

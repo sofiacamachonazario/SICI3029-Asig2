@@ -103,6 +103,16 @@ namespace membership_calculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pexels_olly_3775589 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-olly-3775589", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_olly_864939 {
             get {
                 object obj = ResourceManager.GetObject("pexels-olly-864939", resourceCulture);

@@ -51,7 +51,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Pristina", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(233, 375);
+            this.label2.Location = new System.Drawing.Point(694, 667);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(520, 42);
             this.label2.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.AutoSize = true;
             this.BackgroundImage = global::membership_calculator.Properties.Resources.pexels_tima_miroshnichenko_63883871;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1275, 739);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

@@ -161,5 +161,8 @@
   <ItemGroup>
     <None Include="Resources\pexels-olly-3768586.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-olly-3775589.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

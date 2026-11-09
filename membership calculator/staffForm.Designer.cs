@@ -45,7 +45,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(666, 378);
+            this.button1.Location = new System.Drawing.Point(1075, 658);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 45);
             this.button1.TabIndex = 0;
@@ -61,7 +61,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button2.Location = new System.Drawing.Point(54, 392);
+            this.button2.Location = new System.Drawing.Point(33, 574);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 71);
             this.button2.TabIndex = 1;
@@ -76,7 +76,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button3.Location = new System.Drawing.Point(666, 246);
+            this.button3.Location = new System.Drawing.Point(1027, 268);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(114, 45);
             this.button3.TabIndex = 2;
@@ -87,20 +87,22 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Pristina", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Pristina", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(228, 268);
+            this.label1.Location = new System.Drawing.Point(837, 546);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(410, 32);
             this.label1.TabIndex = 9;
             this.label1.Text = "BODY BLITZ INSTRUCTORS";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Sans Serif Collection", 9.749998F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Pristina", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(224, 153);
+            this.label3.Location = new System.Drawing.Point(672, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(589, 90);
             this.label3.TabIndex = 10;
@@ -111,9 +113,9 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Pristina", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Menu;
-            this.label2.Location = new System.Drawing.Point(195, 310);
+            this.label2.Location = new System.Drawing.Point(691, 578);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(556, 42);
             this.label2.TabIndex = 11;
@@ -124,9 +126,9 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Pristina", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(12, 209);
+            this.label5.Location = new System.Drawing.Point(12, 413);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(193, 165);
             this.label5.TabIndex = 12;
@@ -137,9 +139,10 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Pristina", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Pristina", 21.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label4.Location = new System.Drawing.Point(228, 121);
+            this.label4.Location = new System.Drawing.Point(792, 102);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(397, 32);
             this.label4.TabIndex = 8;
@@ -149,9 +152,10 @@
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Pristina", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Pristina", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label6.Location = new System.Drawing.Point(18, 102);
+            this.label6.Location = new System.Drawing.Point(27, 306);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(204, 107);
             this.label6.TabIndex = 13;
@@ -163,7 +167,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::membership_calculator.Properties.Resources.pexels_olly_864939;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(920, 509);
+            this.ClientSize = new System.Drawing.Size(1283, 742);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -173,7 +177,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "staffForm";
             this.Text = "Body Blitz Fitness";
             this.Load += new System.EventHandler(this.Form3_Load);
