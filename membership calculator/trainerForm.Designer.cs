@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -37,11 +38,25 @@
             this.label2.Font = new System.Drawing.Font("Pristina", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(438, 44);
+            this.label2.Location = new System.Drawing.Point(516, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 95);
+            this.label2.Size = new System.Drawing.Size(242, 95);
             this.label2.TabIndex = 1;
             this.label2.Text = "Richard Millyard";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Pristina", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(518, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(242, 95);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "medal winning bodybuilder Richard Millyard can be booked for monday afternoons to" +
+    " friday mornings. he will personally make sure you get in the most effective wor" +
+    "k out possible \r\n";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // trainerForm
             // 
@@ -50,7 +65,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::membership_calculator.Properties.Resources.pexels_julia_larson_6455771;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(712, 543);
+            this.ClientSize = new System.Drawing.Size(770, 606);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "trainerForm";
@@ -63,5 +79,6 @@
 
         #endregion
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

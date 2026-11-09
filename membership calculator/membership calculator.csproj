@@ -90,11 +90,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="facilitiesForm.resx">
+      <DependentUpon>facilitiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="instructorForm.resx">
+      <DependentUpon>instructorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="membershipForm.resx">
       <DependentUpon>membershipForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personalTrainerForm.resx">
+      <DependentUpon>personalTrainerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="staffForm.resx">
       <DependentUpon>staffForm.cs</DependentUpon>
@@ -139,6 +148,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pexels-julia-larson-6455771.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-tima-miroshnichenko-6388387.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-tima-miroshnichenko-63883871.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-tima-miroshnichenko-6389868.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-olly-3768586.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

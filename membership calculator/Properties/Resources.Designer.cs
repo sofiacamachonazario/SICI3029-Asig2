@@ -83,6 +83,16 @@ namespace membership_calculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pexels_olly_3768586 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-olly-3768586", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_olly_3768697 {
             get {
                 object obj = ResourceManager.GetObject("pexels-olly-3768697", resourceCulture);
@@ -106,6 +116,36 @@ namespace membership_calculator.Properties {
         internal static System.Drawing.Bitmap pexels_olly_901439 {
             get {
                 object obj = ResourceManager.GetObject("pexels-olly-901439", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_tima_miroshnichenko_6388387 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-tima-miroshnichenko-6388387", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_tima_miroshnichenko_63883871 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-tima-miroshnichenko-63883871", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_tima_miroshnichenko_6389868 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-tima-miroshnichenko-6389868", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
