@@ -24,7 +24,8 @@ namespace membership_calculator
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            personalTrainerForm personalTrainer = new personalTrainerForm();
+            personalTrainer.ShowDialog(); 
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -34,7 +35,14 @@ namespace membership_calculator
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            trainerForm trainer = new trainerForm();
+            trainer.ShowDialog(); 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            instructorForm instructor = new instructorForm();
+            instructor.ShowDialog(); 
         }
     }
 }

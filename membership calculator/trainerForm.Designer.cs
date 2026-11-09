@@ -65,10 +65,10 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::membership_calculator.Properties.Resources.pexels_julia_larson_6455771;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(770, 606);
+            this.ClientSize = new System.Drawing.Size(798, 540);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "trainerForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "trainers";
